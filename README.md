@@ -1,1 +1,3 @@
-# Math24
+# MAPNotes24
+
+##Notes
