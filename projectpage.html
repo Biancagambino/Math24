@@ -58,6 +58,9 @@
             margin: 20px 0;
             border-radius: 5px;
         }
+        .coffee-description h3 {
+            margin-top: 0;
+        }
     </style>
 </head>
 <body>
@@ -68,15 +71,76 @@
     <nav>
         <a href="#overview">Overview</a>
         <a href="#methodology">Methodology</a>
+        <a href="#coffeetypes">Types of Coffee</a>
         <a href="#tools">Tools</a>
         <a href="#results">Results</a>
     </nav>
 
     <div class="content" id="overview">
         <h2>Overview</h2>
-        <p>Welcome to the Coffee Type Detection Project! This project aims to detect different types of coffee from photographs using machine learning techniques. Whether it's espresso, cappuccino, or latte, the goal is to accurately classify the type of coffee present in an image.</p>
+        <p>Welcome to the Coffee Type Detection Project! This project focuses on detecting and classifying different types of coffee from photographs using advanced machine learning techniques. The aim is to build a model capable of identifying various coffee types like espresso, cappuccino, latte, and more, by analyzing visual characteristics in the images.</p>
+    </div>
+
+    <div class="content" id="methodology">
+        <h2>Methodology</h2>
+        <p>The project follows a systematic approach:</p>
+        <ul>
+            <li><strong>Data Collection:</strong> A comprehensive dataset of coffee images representing different coffee types is gathered.</li>
+            <li><strong>Preprocessing:</strong> Images are preprocessed through resizing, normalization, and data augmentation to prepare them for model training.</li>
+            <li><strong>Model Training:</strong> Machine learning models are trained using Python and various libraries to classify coffee types based on image data.</li>
+            <li><strong>Evaluation:</strong> The trained models are evaluated on a separate test set to measure their accuracy and robustness.</li>
+        </ul>
+    </div>
+
+    <div class="content" id="coffeetypes">
+        <h2>Types of Coffee</h2>
         
         <div class="coffee-description">
-            <h3>Hot Coffee</h3>
-            <p>Hot coffee is brewed and served hot, typically at a temperature between 195°F and 205°F. It's a comforting,
+            <h3>Espresso</h3>
+            <p>Espresso is a concentrated form of coffee brewed by forcing a small amount of nearly boiling water through finely-ground coffee beans. It's known for its rich flavor and is often the base for many other coffee drinks like lattes and cappuccinos.</p>
+        </div>
+
+        <div class="coffee-description">
+            <h3>Cappuccino</h3>
+            <p>Cappuccino is an espresso-based coffee drink that originated in Italy, and is traditionally prepared with steamed milk foam. It has a rich, creamy texture, with a balance of strong coffee and smooth milk.</p>
+        </div>
+
+        <div class="coffee-description">
+            <h3>Latte</h3>
+            <p>A latte is made with espresso and steamed milk, with a small amount of milk foam on top. It’s smoother and less intense than a cappuccino, making it a popular choice for those who prefer a milder coffee flavor.</p>
+        </div>
+
+        <div class="coffee-description">
+            <h3>Americano</h3>
+            <p>An Americano is a style of coffee prepared by adding hot water to espresso, giving it a similar strength to, but different flavor from, traditionally brewed coffee. It has a rich, deep coffee flavor with a slightly bitter taste.</p>
+        </div>
+
+        <div class="coffee-description">
+            <h3>Macchiato</h3>
+            <p>A macchiato is an espresso with a small amount of steamed milk, usually just a dollop of foam. The term "macchiato" means "stained" or "spotted" in Italian, referring to the small amount of milk added to the espresso.</p>
+        </div>
+    </div>
+
+    <div class="content" id="tools">
+        <h2>Tools</h2>
+        <p>This project utilizes the following tools and technologies:</p>
+        <ul>
+            <li><strong>Python:</strong> The primary programming language used for developing the detection algorithms and models.</li>
+            <li><strong>TensorFlow/Keras:</strong> Libraries for building and training deep learning models.</li>
+            <li><strong>OpenCV:</strong> A computer vision library used for image processing and manipulation.</li>
+            <li><strong>Jupyter Notebook:</strong> An interactive environment for writing and executing Python code.</li>
+        </ul>
+    </div>
+
+    <div class="content" id="results">
+        <h2>Results</h2>
+        <p>The results section will present the outcomes of the model training, including accuracy metrics, confusion matrices, and example classifications. The model’s performance will be demonstrated through its ability to correctly identify coffee types from new images.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Coffee Type Detection Project</p>
+    </footer>
+</body>
+</html>
+
 
