@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee Type Detection Project</title>
+    <title>Weather Photography Project</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
+            background-color: #eef2f3;
             margin: 0;
             padding: 20px;
         }
         header {
-            background-color: #4b3832;
+            background-color: #0077b6;
             color: white;
             padding: 20px 0;
             text-align: center;
+        }
+        header img {
+            max-width: 100px;
+            height: auto;
+            margin-bottom: 10px;
         }
         h1 {
             margin: 0;
@@ -28,7 +33,7 @@
         nav a {
             margin: 0 15px;
             text-decoration: none;
-            color: #4b3832;
+            color: #0077b6;
             font-weight: bold;
         }
         .content {
@@ -40,7 +45,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         h2 {
-            color: #4b3832;
+            color: #0077b6;
         }
         p {
             line-height: 1.6;
@@ -51,96 +56,62 @@
             margin-top: 30px;
             color: #777;
         }
-        .coffee-description {
+        .weather-description {
             background-color: #f0e7de;
-            border-left: 5px solid #4b3832;
+            border-left: 5px solid #0077b6;
             padding: 15px;
             margin: 20px 0;
             border-radius: 5px;
         }
-        .coffee-description h3 {
+        .weather-description h3 {
             margin-top: 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Coffee Type Detection Project</h1>
+        <img src="logo.png" alt="Project Logo">
+        <h1>Weather Photography Project</h1>
     </header>
 
     <nav>
         <a href="#overview">Overview</a>
-        <a href="#methodology">Methodology</a>
-        <a href="#coffeetypes">Types of Coffee</a>
-        <a href="#tools">Tools</a>
-        <a href="#results">Results</a>
+        <a href="#coldweather">Cold Weather</a>
+        <a href="#warmweather">Warm Weather</a>
+        <a href="#impact">Impact of Weather</a>
     </nav>
 
     <div class="content" id="overview">
         <h2>Overview</h2>
-        <p>Welcome to the Coffee Type Detection Project! This project focuses on detecting and classifying different types of coffee from photographs using advanced machine learning techniques. The aim is to build a model capable of identifying various coffee types like espresso, cappuccino, latte, and more, by analyzing visual characteristics in the images.</p>
+        <p>Welcome to the Weather Photography Project! This project explores the visual and environmental differences between cold weather and warm weather through photography. The project aims to capture the unique characteristics and impacts of these two types of weather on landscapes, people, and daily life.</p>
     </div>
 
-    <div class="content" id="methodology">
-        <h2>Methodology</h2>
-        <p>The project follows a systematic approach:</p>
-        <ul>
-            <li><strong>Data Collection:</strong> A comprehensive dataset of coffee images representing different coffee types is gathered.</li>
-            <li><strong>Preprocessing:</strong> Images are preprocessed through resizing, normalization, and data augmentation to prepare them for model training.</li>
-            <li><strong>Model Training:</strong> Machine learning models are trained using Python and various libraries to classify coffee types based on image data.</li>
-            <li><strong>Evaluation:</strong> The trained models are evaluated on a separate test set to measure their accuracy and robustness.</li>
-        </ul>
-    </div>
-
-    <div class="content" id="coffeetypes">
-        <h2>Types of Coffee</h2>
-        
-        <div class="coffee-description">
-            <h3>Espresso</h3>
-            <p>Espresso is a concentrated form of coffee brewed by forcing a small amount of nearly boiling water through finely-ground coffee beans. It's known for its rich flavor and is often the base for many other coffee drinks like lattes and cappuccinos.</p>
-        </div>
-
-        <div class="coffee-description">
-            <h3>Cappuccino</h3>
-            <p>Cappuccino is an espresso-based coffee drink that originated in Italy, and is traditionally prepared with steamed milk foam. It has a rich, creamy texture, with a balance of strong coffee and smooth milk.</p>
-        </div>
-
-        <div class="coffee-description">
-            <h3>Latte</h3>
-            <p>A latte is made with espresso and steamed milk, with a small amount of milk foam on top. It’s smoother and less intense than a cappuccino, making it a popular choice for those who prefer a milder coffee flavor.</p>
-        </div>
-
-        <div class="coffee-description">
-            <h3>Americano</h3>
-            <p>An Americano is a style of coffee prepared by adding hot water to espresso, giving it a similar strength to, but different flavor from, traditionally brewed coffee. It has a rich, deep coffee flavor with a slightly bitter taste.</p>
-        </div>
-
-        <div class="coffee-description">
-            <h3>Macchiato</h3>
-            <p>A macchiato is an espresso with a small amount of steamed milk, usually just a dollop of foam. The term "macchiato" means "stained" or "spotted" in Italian, referring to the small amount of milk added to the espresso.</p>
+    <div class="content" id="coldweather">
+        <h2>Cold Weather</h2>
+        <div class="weather-description">
+            <h3>Characteristics of Cold Weather</h3>
+            <p>Cold weather is often associated with low temperatures, frost, snow, and shorter daylight hours. The landscape is typically covered in a blanket of snow, giving it a serene and sometimes harsh appearance. Cold weather can impact daily life by necessitating warm clothing, heating, and changes in transportation methods. The beauty of cold weather lies in its crisp, clear air and the unique patterns formed by ice and snow.</p>
         </div>
     </div>
 
-    <div class="content" id="tools">
-        <h2>Tools</h2>
-        <p>This project utilizes the following tools and technologies:</p>
-        <ul>
-            <li><strong>Python:</strong> The primary programming language used for developing the detection algorithms and models.</li>
-            <li><strong>TensorFlow/Keras:</strong> Libraries for building and training deep learning models.</li>
-            <li><strong>OpenCV:</strong> A computer vision library used for image processing and manipulation.</li>
-            <li><strong>Jupyter Notebook:</strong> An interactive environment for writing and executing Python code.</li>
-        </ul>
+    <div class="content" id="warmweather">
+        <h2>Warm Weather</h2>
+        <div class="weather-description">
+            <h3>Characteristics of Warm Weather</h3>
+            <p>Warm weather is characterized by higher temperatures, longer daylight hours, and vibrant, lush landscapes. This type of weather encourages outdoor activities, social gatherings, and a more relaxed lifestyle. Warm weather often brings bright sunshine, clear skies, and flourishing vegetation, making it ideal for photography that captures life, energy, and color.</p>
+        </div>
     </div>
 
-    <div class="content" id="results">
-        <h2>Results</h2>
-        <p>The results section will present the outcomes of the model training, including accuracy metrics, confusion matrices, and example classifications. The model’s performance will be demonstrated through its ability to correctly identify coffee types from new images.</p>
+    <div class="content" id="impact">
+        <h2>Impact of Weather</h2>
+        <p>The impact of weather on daily life and the environment is profound. Cold weather can lead to challenges such as frostbite, hypothermia, and difficulties in travel. It can also create stunningly beautiful scenes that are perfect for photography. On the other hand, warm weather promotes growth, activity, and social interaction, but can also bring challenges like heatwaves and droughts. Through photography, this project aims to highlight the contrasts and complementarities of these two weather conditions, showing how they shape the world around us in distinct ways.</p>
     </div>
 
     <footer>
-        <p>&copy; 2024 Coffee Type Detection Project</p>
+        <p>&copy; 2024 Weather Photography Project</p>
     </footer>
 </body>
+</html>
 </html>
 
 
